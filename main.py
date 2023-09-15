@@ -32,3 +32,13 @@ if resposta==1:
 if resposta == 2:
     usuario = input("Digite o nome do Usuário ").title()
     senha = input("Digite a Sua Senha ")
+    for index,adm in bancoDados.adm.items():
+        if usuario == adm[0] and senha == adm[1]:
+            print(f"Ola {usuario} Bem vindo novamente")
+            print(f"Escolha uma das opções abaixo para continuar: ")
+            print("Digite 1 para ver todos os usuários cadastrados")
+            print("Digite 2 para adicionar um novo usuário")
+            print("Digite 3 para excluir um usuário")
+            print("Digite 4 para procurar um usuário específico")
+            print("Digite 5 para Sair")
+            opcao = int(input("Entre com a opção desejada: "))
