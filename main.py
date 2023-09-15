@@ -25,7 +25,22 @@ if resposta==1:
                             print(lista[5])
                     break
             elif opcao == 2:
-                print("Falando com o atendente")
+                cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+                cliente.connect(('localhost',8885))
+
+                terminado = False
+                print("Digite tt para terminar o chat")
+                print(f"Olá {usuario} digite um breve resumo do Assunto")
+
+                while not terminado:
+                    cliente.send(input(f'{usuario}: ').encode("utf-8"))
+                    msg = cliente.recv(1024).decode('utf-8')
+                    if msg =="tt":
+                        terminado = True
+                    else:
+                        print(msg)
+                cliente.close()
         else:
             print("Usuário não cadastrado")
 
