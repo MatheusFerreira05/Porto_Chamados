@@ -82,3 +82,6 @@ if resposta == 2:
                 for index,lista in bancoDados.apolices.items():
                     if apoliceBuscada == lista[0]:
                         print(index,lista)
+                    
+elif resposta == 3:
+    print("Finalizando aplicação")
