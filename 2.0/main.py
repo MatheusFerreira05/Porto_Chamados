@@ -1,5 +1,5 @@
 from flask import Flask , render_template, request,redirect
-
+import bancoDados
 app = Flask(__name__)
 
 @app.route('/')
