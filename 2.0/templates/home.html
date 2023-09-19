@@ -9,6 +9,14 @@
 <body>
     <div id="container-login">
         <img src="{{url_for('static', filename='img/logo.jpg')}}" alt="Logo da Empresa" style="display: block; margin: 0 auto; width: 150px;">
+
+        <form action="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="nome">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            <button type="submit" value="entrar" id="btn-entrar">ENTRAR</button>
+        </form>
     </div>
 
 </body>
