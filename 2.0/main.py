@@ -35,6 +35,10 @@ def form():
     extra = request.form.get("possui_extra")
     locomover = request.form.get("consegue_locomover")
     lista = [apolice,nome,cpf,veiculo,placa,cep,numero,estado_veiculo,tipo_acidente,extra,locomover]
-
+    for index,lista in bancoDados.apolices.items():
+        if apolice == lista[1]:
+            return "Dados validados"
+        else:
+            return render_template('form.html')
 if __name__ == "__main__":
     app.run(debug=True)
