@@ -21,5 +21,9 @@ def login():
 def form_page():
     return render_template('form.html')
 
+@app.route("/chamado",methods=["POST"])
+def form():
+    return "chamado aberto"
+
 if __name__ == "__main__":
     app.run(debug=True)
