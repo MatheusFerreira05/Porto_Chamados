@@ -34,6 +34,7 @@ def form():
     tipo_acidente = request.form.get("tipo_acidente")
     extra = request.form.get("possui_extra")
     locomover = request.form.get("consegue_locomover")
+    lista = [apolice,nome,cpf,veiculo,placa,cep,numero,estado_veiculo,tipo_acidente,extra,locomover]
 
 if __name__ == "__main__":
     app.run(debug=True)
