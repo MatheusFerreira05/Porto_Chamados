@@ -11,7 +11,63 @@
 
         <h1>Preencha as informações para continuar com a abertura do chamado</h1>
         <form action="#" method="post">
-            
+            <div class="form-group">
+                <label for="apolice">Apólice:</label>
+                <input type="text" id="apolice" name="apolice">
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+            <div class="form-group">
+                <label for="veiculo">Veículo:</label>
+                <input type="text" id="veiculo" name="veiculo">
+            </div>,
+            <div class="form-group">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa">
+            </div>
+            <div class="form-group">
+                <label for="cep">Localização (CEP):</label>
+                <input type="text" id="cep" name="cep">
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+            <div class="form-group">
+                <label for="estado_veiculo">Estado do Veículo:</label>
+                <select id="estado_veiculo" name="estado_veiculo">
+                    <option value="batido">Batido</option>
+                    <option value="batido_alteracao">Batido com Alteração na Estrutura</option>
+                    <option value="inteiro">Inteiro</option>
+                    <option value="capotado">Capotado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tipo_acidente">Tipo de Acidente:</label>
+                <select id="tipo_acidente" name="tipo_acidente">
+                    <option value="batida_frontal">Batida Frontal</option>
+                    <option value="batida_lateral">Batida Lateral</option>
+                    <option value="batida_traseira">Batida Traseira</option>
+                    <option value="capotamento">Capotamento</option>
+                </select>
+            </div>
+            <div class="form-group checkbox">
+                <label>O veículo possui extra:</label>
+                <input type="checkbox" id="possui_extra" name="possui_extra">
+            </div>
+            <div class="form-group checkbox">
+                <label>O veículo consegue se locomover:</label>
+                <input type="checkbox" id="consegue_locomover" name="consegue_locomover">
+            </div>
+            <div class="submit-button">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </div>
 </body>
