@@ -23,7 +23,17 @@ def form_page():
 
 @app.route("/chamado",methods=["POST"])
 def form():
-    return "chamado aberto"
+    apolice = request.form.get('apolice')
+    nome = request.form.get("nome")
+    cpf = request.form.get("cpf")
+    veiculo = request.form.get("veiculo")
+    placa = request.form.get("placa")
+    cep = request.form.get("cep")
+    numero = request.form.get("numero")
+    estado_veiculo = request.form.get("estado_veiculo")
+    tipo_acidente = request.form.get("tipo_acidente")
+    extra = request.form.get("possui_extra")
+    locomover = request.form.get("consegue_locomover")
 
 if __name__ == "__main__":
     app.run(debug=True)
