@@ -43,6 +43,6 @@ def form():
         
 @app.route("/modal")
 def modal(lista):
-    pass
+    return render_template('modal.html')
 if __name__ == "__main__":
     app.run(debug=True)
