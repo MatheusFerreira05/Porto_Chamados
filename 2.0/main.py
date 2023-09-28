@@ -37,7 +37,7 @@ def form():
     lista = [apolice,nome,cpf,veiculo,placa,cep,numero,estado_veiculo,tipo_acidente,extra,locomover]
     for index,lista in bancoDados.apolices.items():
         if apolice == lista[1]:
-            return "Dados validados"
+            return modal(lista)
         else:
             return render_template('form.html')
         
