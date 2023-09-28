@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha do Modal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modal.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <label for="">Apolice: {{ apolice }}</label>
+            <label for="">Nome: {{ nome }}</label>
+            <label for="">CPF: {{ cpf }}</label>
+            <label for="">Veiculo: {{ veiculo }}</label>
+            <label for="">Placa: {{ placa }}</label>
+            <label for="">Cep: {{ cep }}</label>
+            <label for="">Numero: {{ numero }}</label>
+            <label for="">Estado do Veículo: {{ estado_veiculo }}</label>
+            <label for="">Tipo de Acidente: {{ tipo_acidente }}</label>
+            <label for="">Possui Extra: {{ extra }}</label>
+            <label for="">Consegue se locomover: {{ locomover }}</label>
+        </div>
+        <div class="right-column">
+            <h1>Escolha o seguinte modal</h1>
+            <img src="{{url_for('static', filename='img/guincho.png')}}" alt="Imagem modal">
+        </div>
+    </div>
+</body>
+</html>
