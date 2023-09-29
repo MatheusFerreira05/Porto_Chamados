@@ -45,5 +45,8 @@ def form():
 def modal(lista):
     if lista[9] == None and lista[10] == None:
         return render_template('modal.html',apolice = lista[0],nome = lista[1],cpf = lista[2],veiculo = lista[3],placa = lista[4],cep = lista[5],numero = lista[6],estado_veiculo = lista[7],tipo_acidente = lista[8],extra = "Não",locomover = "Não")
+    
+    elif lista[9] == None and lista[10] == "on":
+        return render_template('modal.html',apolice = lista[0],nome = lista[1],cpf = lista[2],veiculo = lista[3],placa = lista[4],cep = lista[5],numero = lista[6],estado_veiculo = lista[7],tipo_acidente = lista[8],extra = "Não",locomover = "Sim")
 if __name__ == "__main__":
     app.run(debug=True)
